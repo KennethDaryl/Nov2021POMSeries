@@ -16,7 +16,7 @@ import io.qameta.allure.Story;
 public class LoginPageTest extends BaseTest {
 	
 	@Description("Login Page Title test")
-	@Test
+	@Test(enabled = true)
 	public void loginPageTitleTest() {
 		String title = loginPage.getLoginPageTitle();
 		System.out.println("Page title is :" + title);
