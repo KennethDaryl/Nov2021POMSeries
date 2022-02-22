@@ -5,7 +5,7 @@
 	parallel="tests" verbose="4">
 
 	<listeners>
-	<listener
+		<listener
 			class-name="com.qa.opencart.listeners.AnnotationTransformer" />
 		<listener
 			class-name="com.qa.opencart.listeners.ExtentReportListener" />
@@ -22,7 +22,14 @@
 			<class name="com.qa.opencart.tests.AccountsPageTest" />
 		</classes>
 	</test>
-	<!-- <test name="Registration Page Test"> <classes> <class name="com.qa.opencart.tests.RegistrationPageTest" 
-		/> </classes> </test> <test name="Product Info Page Test"> <classes> <class 
-		name="com.qa.opencart.tests.ProductInfoPageTest" /> </classes> </test> -->
+	<!-- <test name="Registration Page Test">
+		<classes>
+			<class name="com.qa.opencart.tests.RegistrationPageTest" />
+		</classes>
+	</test> -->
+	<test name="Product Info Page Test">
+		<classes>
+			<class name="com.qa.opencart.tests.ProductInfoPageTest" />
+		</classes>
+	</test>
 </suite>
